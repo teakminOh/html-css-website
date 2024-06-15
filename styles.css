@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    
+    justify-content: space-between;
+    background-color: #1f2937;
+    padding: 16px 150px;
+    align-items: center;
+}
+
+
+.links ul li{
+    margin-left: 16px;
+}
+
+ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
