@@ -1,22 +1,127 @@
-body{
+body, main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+}
+h2{
+    text-align: center;
+    font-size: 36px;
+}
+.text h1{
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: -10px;
 }
 
-header{
+.nav, .top-info{
     display: flex;
-    
     justify-content: space-between;
     background-color: #1f2937;
     padding: 16px 150px;
     align-items: center;
+    gap: 80px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    padding-bottom: 64px;
+}
+.hero-container{
+    width: 1500px;
 }
 
+.container, .hero-container{
+    display: flex;
+    flex-direction: column;
+}
+.square-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px;
+}
+.info-container{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.square{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+}
+.info-container p, .square, .square img{
+    margin: 8px 0;
+    width: 200px;
+    height: 200px;
+}
+.info-container p{
+    height: 20px;
+}
+h2{
+    margin: 32px;
+}
+.square, .square img{
+    margin: 0;
+    border-radius: 10%;
+    border:2px solid #3882f6 ;
+}
+.quote-section{
+    margin-top: 71px;
+    font-size: 36px;
+    font-style: italic;
+    background-color: #e5e7eb;
+    padding: 100px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.citation{
+    width: 800px;
+}
+
+.quote-section .name {
+    font-style: normal;
+    font-weight: 900;
+    margin: 0;
+    margin-left: auto;
+}
+
+.top-info img{
+    flex-shrink: 0;
+}
+.text button{
+    max-width: 100px;
+    background-color: #3882f6;
+    color: white;
+}
+button{
+    border-radius: 10px;
+    padding: 8px;
+    border: 1px solid white;
+}
 
 .links ul li{
     margin-left: 16px;
+}
+.text{
+    color: white;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 16px;
 }
 
 ul{
@@ -28,4 +133,41 @@ ul{
 a{
     text-decoration: none;
     color: white;
+}
+
+.row-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter{
+    background-color: #3882f6;
+    color: white;
+    width: 900px;
+    height: 125px;
+    border-radius: 5px;
+    margin: 64px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 76px;
+}
+.newsletter button{
+    border: 1px solid white;
+    flex: 0 0 100px;
+    background-color: #3882f6;
+    color: white;
+}
+button:hover{
+    background-color: #084e77;
+}
+strong{
+    font-size: large;
+}
+.copyright{
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 16px 0;
 }
